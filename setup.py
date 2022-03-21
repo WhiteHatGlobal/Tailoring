@@ -10,7 +10,7 @@ setup(
 	name="tailorpad",
 	version=version,
 	description="Tailoring Application 2.0",
-	author="Eco Data",
+	author="White Hat Global",
 	author_email="rk@whitehatglobal.org",
 	packages=find_packages(),
 	zip_safe=False,
