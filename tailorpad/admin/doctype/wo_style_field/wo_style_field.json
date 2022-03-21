@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "creation": "2021-08-22 00:22:34.120804",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "default",
+  "change_style",
+  "style_field",
+  "style_name",
+  "note",
+  "column_break_5",
+  "image",
+  "image_view",
+  "html_image",
+  "define_cost_to_tailor",
+  "process_wise_tailor_cost",
+  "operation",
+  "cost_to_tailor",
+  "cost_to_customer"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "depends_on": "eval:parent.doctype!='Work Order'",
+   "fieldname": "default",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Default"
+  },
+  {
+   "fieldname": "change_style",
+   "fieldtype": "Button",
+   "label": "Change Style"
+  },
+  {
+   "fieldname": "style_field",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Style Field",
+   "options": "Style"
+  },
+  {
+   "fieldname": "style_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Style Option",
+   "options": "Style Name",
+   "precision": "2"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Note"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "100 x 100 pixels",
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "Upload Image"
+  },
+  {
+   "fieldname": "image_view",
+   "fieldtype": "Image",
+   "hidden": 1,
+   "label": "Image View",
+   "options": "image"
+  },
+  {
+   "fieldname": "html_image",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Image",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:parent.doctype=='Item'",
+   "fieldname": "define_cost_to_tailor",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Define Cost To Tailor "
+  },
+  {
+   "fieldname": "process_wise_tailor_cost",
+   "fieldtype": "Text",
+   "hidden": 1,
+   "label": "Process Wise Tailor Cost",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:parent.doctype=='Item'",
+   "fieldname": "operation",
+   "fieldtype": "Link",
+   "label": "Operation",
+   "options": "Operation"
+  },
+  {
+   "depends_on": "eval:parent.doctype=='Item'",
+   "fieldname": "cost_to_tailor",
+   "fieldtype": "Currency",
+   "label": "Cost to Tailor"
+  },
+  {
+   "fieldname": "cost_to_customer",
+   "fieldtype": "Currency",
+   "label": "Cost to Customer",
+   "precision": "2"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-09-10 14:00:57.096759",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "WO Style Field",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

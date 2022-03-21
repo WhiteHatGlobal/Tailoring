@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "autoname": "field:item_naming_series",
+ "creation": "2021-08-22 00:22:15.078709",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item_naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_naming_series",
+   "fieldtype": "Data",
+   "label": "Item Naming Series",
+   "unique": 1
+  }
+ ],
+ "links": [],
+ "modified": "2021-08-22 01:44:51.946905",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Item Naming Series",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

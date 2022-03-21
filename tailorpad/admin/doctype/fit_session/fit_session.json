@@ -1,0 +1,243 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-09-19 20:20:31.354792",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "customer",
+  "customer_name",
+  "item_name",
+  "current_trial_date",
+  "column_break_1",
+  "item_code",
+  "current_trial_no",
+  "order_date",
+  "trial_date",
+  "delivery_date",
+  "trial_serial_no",
+  "po_operation",
+  "section_break_4",
+  "close_all_trials",
+  "column_break_12",
+  "update_work_order",
+  "section_break_12",
+  "trials",
+  "reference_detail",
+  "sales_order",
+  "work_order",
+  "modified_work_order",
+  "column_break_6",
+  "production_order",
+  "warehouse",
+  "status",
+  "current_trial_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "current_trial_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fit Session No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_trial_date",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Fit Session Date"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "trial_serial_no",
+   "fieldtype": "Link",
+   "label": "Fit Session Serial No",
+   "options": "Serial No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:(doc.po_operation && doc.po_operation === 'Yes' && doc.status == \"Open\")",
+   "description": "Close all fit sessions and transfer material to next operation",
+   "fieldname": "close_all_trials",
+   "fieldtype": "Button",
+   "label": "Close All Fit Sessions"
+  },
+  {
+   "fieldname": "trials",
+   "fieldtype": "Table",
+   "label": "Fit Session",
+   "options": "Trial Detail"
+  },
+  {
+   "fieldname": "reference_detail",
+   "fieldtype": "Section Break",
+   "label": "Reference Detail"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Link",
+   "label": "Original Work Order",
+   "options": "Work Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "production_order",
+   "fieldtype": "Link",
+   "label": "Production Order",
+   "options": "Production Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "read_only": 1
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Open\nClosed",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_trial_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Current Fit Session Name",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "FS-"
+  },
+  {
+   "fieldname": "modified_work_order",
+   "fieldtype": "Small Text",
+   "label": "Modified Work Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:(doc.po_operation && doc.po_operation === 'Yes' && doc.status == \"Open\")",
+   "fieldname": "update_work_order",
+   "fieldtype": "Button",
+   "label": "Update Work Order"
+  },
+  {
+   "fieldname": "po_operation",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "PO Operation",
+   "options": "\nNo\nYes"
+  },
+  {
+   "fieldname": "trial_date",
+   "fieldtype": "Datetime",
+   "label": "Fitting Date & Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "label": "Order Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "delivery_date",
+   "fieldtype": "Datetime",
+   "label": "Delivery Date & Time",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-01-03 17:45:09.348879",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Fit Session",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

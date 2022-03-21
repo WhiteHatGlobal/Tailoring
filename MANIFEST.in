@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include tailorpad *.css
+recursive-include tailorpad *.csv
+recursive-include tailorpad *.html
+recursive-include tailorpad *.ico
+recursive-include tailorpad *.js
+recursive-include tailorpad *.json
+recursive-include tailorpad *.md
+recursive-include tailorpad *.png
+recursive-include tailorpad *.py
+recursive-include tailorpad *.svg
+recursive-include tailorpad *.txt
+recursive-exclude tailorpad *.pyc

@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "autoname": "field:width",
+ "creation": "2021-08-22 00:22:15.370982",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "width"
+ ],
+ "fields": [
+  {
+   "fieldname": "width",
+   "fieldtype": "Data",
+   "label": "Width",
+   "unique": 1
+  }
+ ],
+ "links": [],
+ "modified": "2021-08-22 01:45:19.036849",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Width",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

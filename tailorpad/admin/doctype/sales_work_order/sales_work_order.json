@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "creation": "2021-08-22 00:55:19.814012",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "work_order",
+  "item_code",
+  "item_name",
+  "tailoring_supplier",
+  "fabric_details",
+  "fabric_code",
+  "fabric_name",
+  "fabric_supplier_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Work Order",
+   "options": "Work Order"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tailoring Item",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Item Name",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "tailoring_supplier",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tailoring Supplier",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fabric_details",
+   "fieldtype": "Section Break",
+   "label": "Fabric Details"
+  },
+  {
+   "fieldname": "fabric_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Fabric Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "fabric_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Fabric Name",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "fabric_supplier_name",
+   "fieldtype": "Data",
+   "label": "Fabric Supplier Name"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-10-21 17:25:38.921675",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Sales Work Order",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

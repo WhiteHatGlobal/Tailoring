@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "creation": "2022-02-06 19:04:03.997867",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "default",
+  "product_option",
+  "product_field",
+  "product_options",
+  "note",
+  "column_break_4",
+  "image",
+  "image_view",
+  "image_html"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "default",
+   "fieldtype": "Check",
+   "label": "Default"
+  },
+  {
+   "fieldname": "product_option",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Option"
+  },
+  {
+   "fieldname": "product_field",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Field"
+  },
+  {
+   "default": "0",
+   "fieldname": "product_options",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Options",
+   "precision": "2"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Note"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "100 x 100 pixels",
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "Upload Image"
+  },
+  {
+   "fieldname": "image_view",
+   "fieldtype": "Image",
+   "hidden": 1,
+   "label": "Image",
+   "options": "image"
+  },
+  {
+   "fieldname": "image_html",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Image View",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2022-02-06 19:04:03.997867",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Customer Product Data",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

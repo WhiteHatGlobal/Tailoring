@@ -1,0 +1,203 @@
+{
+ "actions": [],
+ "creation": "2021-08-22 00:49:24.234192",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "open",
+  "close_current_trial",
+  "appointment_no",
+  "column_break_3",
+  "trial_no",
+  "fitting_date",
+  "trial_status",
+  "appointment",
+  "new_row",
+  "event_details",
+  "start_time",
+  "fitting_start",
+  "data_8",
+  "end_time",
+  "fitting_end",
+  "modification_after_trial",
+  "update_work_order",
+  "column_break_13",
+  "modified_work_order",
+  "refernce",
+  "source_warehouse",
+  "stock_entry",
+  "column_break_18",
+  "target_warehouse",
+  "po_complete"
+ ],
+ "fields": [
+  {
+   "fieldname": "open",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Open",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.trial_status === \"Pending\" && doc.po_complete ===\"Yes\"",
+   "description": "Close current fit session and open next fit session",
+   "fieldname": "close_current_trial",
+   "fieldtype": "Button",
+   "label": "Close Current Fit Session",
+   "read_only_depends_on": "eval:doc.po_complete === 'No'"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "trial_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fit Session No",
+   "read_only": 1
+  },
+  {
+   "default": "Pending",
+   "fieldname": "trial_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Fit Session Status ",
+   "options": "Pending\nOpen\nClosed\nCompleted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "event_details",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Event Details"
+  },
+  {
+   "depends_on": "eval:!doc.fitting_date",
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "label": "Start Time",
+   "read_only_depends_on": "eval:(!doc.po_complete || doc.po_complete === 'No')"
+  },
+  {
+   "fieldname": "data_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:!doc.fitting_date",
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "label": "End Time",
+   "read_only_depends_on": "eval:(!doc.po_complete || doc.po_complete === 'No')"
+  },
+  {
+   "fieldname": "modification_after_trial",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Modification After Fit Session"
+  },
+  {
+   "fieldname": "update_work_order",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Update Work Order"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "modified_work_order",
+   "fieldtype": "Link",
+   "label": "Modified Work Order",
+   "options": "Work Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "refernce",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Refernce"
+  },
+  {
+   "fieldname": "source_warehouse",
+   "fieldtype": "Data",
+   "label": "Source Warehouse",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Link",
+   "label": "Stock Entry",
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_warehouse",
+   "fieldtype": "Data",
+   "label": "Target Warehouse",
+   "read_only": 1
+  },
+  {
+   "fieldname": "po_complete",
+   "fieldtype": "Select",
+   "label": "PO Complete",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "fitting_date",
+   "fieldtype": "Datetime",
+   "label": "Fitting Date & Time"
+  },
+  {
+   "depends_on": "eval:doc.fitting_date",
+   "fieldname": "fitting_start",
+   "fieldtype": "Datetime",
+   "label": "Start Time"
+  },
+  {
+   "depends_on": "eval:doc.fitting_date",
+   "fieldname": "fitting_end",
+   "fieldtype": "Datetime",
+   "label": "End Time"
+  },
+  {
+   "default": "0",
+   "fieldname": "appointment",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Appointment"
+  },
+  {
+   "default": "0",
+   "fieldname": "new_row",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "New Row"
+  },
+  {
+   "fieldname": "appointment_no",
+   "fieldtype": "Link",
+   "label": "Appointment No",
+   "options": "Appointment",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-12-28 19:17:19.156551",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Trial Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

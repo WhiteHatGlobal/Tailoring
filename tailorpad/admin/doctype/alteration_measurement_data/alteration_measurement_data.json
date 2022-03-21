@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "creation": "2021-09-10 12:21:27.941985",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "measurement_template",
+  "measurement_field",
+  "measurement_value",
+  "note",
+  "column_break_4",
+  "image",
+  "image_view",
+  "image_html"
+ ],
+ "fields": [
+  {
+   "fieldname": "measurement_template",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Measurement Template"
+  },
+  {
+   "fieldname": "measurement_field",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Measurement Field"
+  },
+  {
+   "default": "0",
+   "fieldname": "measurement_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Measurement Value",
+   "precision": "2"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Note"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "100 x 100 pixels",
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "Upload Image"
+  },
+  {
+   "fieldname": "image_view",
+   "fieldtype": "Image",
+   "hidden": 1,
+   "label": "Image",
+   "options": "image"
+  },
+  {
+   "fieldname": "image_html",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Image View",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-09-10 12:21:27.941985",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Alteration Measurement Data",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

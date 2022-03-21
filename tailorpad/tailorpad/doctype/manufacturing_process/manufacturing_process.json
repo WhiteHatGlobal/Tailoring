@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "creation": "2021-08-22 01:03:02.910293",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "operation",
+  "start_date",
+  "end_date",
+  "status",
+  "qc",
+  "trial_no",
+  "completed_serial_no",
+  "serial_no",
+  "hours",
+  "style_cost",
+  "total_style_cost",
+  "trial_cost",
+  "piece_rate",
+  "extra_cost",
+  "item_code",
+  "work_order",
+  "trial_control_no",
+  "wages",
+  "paid",
+  "quality_inspection_no",
+  "is_subcontracted"
+ ],
+ "fields": [
+  {
+   "fieldname": "operation",
+   "fieldtype": "Data",
+   "label": "Operation"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Datetime",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Datetime",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nIn Progress\nCompleted\nUnder Quality Inspection\nUnder Trial"
+  },
+  {
+   "default": "0",
+   "fieldname": "qc",
+   "fieldtype": "Check",
+   "label": "QC"
+  },
+  {
+   "fieldname": "trial_no",
+   "fieldtype": "Data",
+   "label": "Trial No"
+  },
+  {
+   "fieldname": "completed_serial_no",
+   "fieldtype": "Small Text",
+   "label": "Completed Serial No"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Small Text",
+   "label": "Serial No"
+  },
+  {
+   "fieldname": "hours",
+   "fieldtype": "Float",
+   "label": "Hours"
+  },
+  {
+   "fieldname": "style_cost",
+   "fieldtype": "Currency",
+   "label": "Style Cost"
+  },
+  {
+   "fieldname": "total_style_cost",
+   "fieldtype": "Currency",
+   "label": "Total Style Cost"
+  },
+  {
+   "fieldname": "trial_cost",
+   "fieldtype": "Currency",
+   "label": "Trial Cost"
+  },
+  {
+   "fieldname": "piece_rate",
+   "fieldtype": "Currency",
+   "label": "Piece Rate"
+  },
+  {
+   "fieldname": "extra_cost",
+   "fieldtype": "Currency",
+   "label": "Extra Cost"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "label": "item_code"
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Data",
+   "label": "work order"
+  },
+  {
+   "fieldname": "trial_control_no",
+   "fieldtype": "Link",
+   "label": "Trial Control No",
+   "options": "Trial Control Form"
+  },
+  {
+   "fieldname": "wages",
+   "fieldtype": "Currency",
+   "label": "Wages"
+  },
+  {
+   "default": "No",
+   "fieldname": "paid",
+   "fieldtype": "Select",
+   "label": "Paid",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "quality_inspection_no",
+   "fieldtype": "Data",
+   "label": "Quality Inspection No"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_subcontracted",
+   "fieldtype": "Check",
+   "label": "Is Subcontracted"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-08-22 01:03:02.910293",
+ "modified_by": "Administrator",
+ "module": "Tailorpad",
+ "name": "Manufacturing Process",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

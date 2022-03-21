@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "creation": "2021-10-09 13:35:22.978025",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "raw_material_code",
+  "item_name",
+  "item_sub_group",
+  "size",
+  "width",
+  "quantity"
+ ],
+ "fields": [
+  {
+   "fieldname": "raw_material_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Raw Material Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Size",
+   "options": "Size"
+  },
+  {
+   "fetch_from": "raw_material_code.item_sub_group",
+   "fieldname": "item_sub_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Sub Group",
+   "options": "Item Sub Group"
+  },
+  {
+   "fetch_from": "raw_material_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Width",
+   "options": "Width"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-11-15 17:13:03.207430",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Raw Material",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

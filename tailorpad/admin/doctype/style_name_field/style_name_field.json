@@ -1,0 +1,29 @@
+{
+ "actions": [],
+ "creation": "2021-08-22 00:22:14.481659",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "style_field"
+ ],
+ "fields": [
+  {
+   "fieldname": "style_field",
+   "fieldtype": "Data",
+   "label": "Style Field"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-08-22 01:44:18.433097",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Style Name Field",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

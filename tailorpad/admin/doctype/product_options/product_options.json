@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:product_option_name",
+ "creation": "2022-02-01 20:45:15.725770",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "product_option_name",
+  "product_fields"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_option_name",
+   "fieldtype": "Data",
+   "label": "Product Option Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "product_fields",
+   "fieldtype": "Table",
+   "label": "Product Fields",
+   "options": "Product Fields"
+  }
+ ],
+ "links": [],
+ "modified": "2022-02-01 20:54:43.175965",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Product Options",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

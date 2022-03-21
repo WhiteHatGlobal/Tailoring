@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "creation": "2021-08-22 00:22:33.832445",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "style_field",
+  "style_name",
+  "change_style",
+  "column_break_4",
+  "note",
+  "image",
+  "image_view",
+  "html_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "style_field",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Style Field",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "style_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Style Option",
+   "options": "Style Name",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "change_style",
+   "fieldtype": "Button",
+   "label": "Change Style"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Note"
+  },
+  {
+   "description": "100 x 100 pixels",
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "Upload Image"
+  },
+  {
+   "fieldname": "image_view",
+   "fieldtype": "Image",
+   "hidden": 1,
+   "label": "Image",
+   "options": "image"
+  },
+  {
+   "fieldname": "html_image",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Image View",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-09-10 14:04:57.307125",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Customer Style Entry",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

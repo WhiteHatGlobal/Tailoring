@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "creation": "2021-08-22 00:53:25.241654",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_3",
+  "item_name",
+  "description",
+  "qty_section",
+  "required_qty",
+  "transferred_qty",
+  "column_break_9",
+  "available_qty_at_source_warehouse",
+  "available_qty_at_wip_warehouse"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qty_section",
+   "fieldtype": "Section Break",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "required_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Required Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "transferred_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Transferred Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "available_qty_at_source_warehouse",
+   "fieldtype": "Float",
+   "label": "Available Qty at Source Warehouse",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_qty_at_wip_warehouse",
+   "fieldtype": "Float",
+   "label": "Available Qty at WIP Warehouse",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-08-22 00:53:25.241654",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Production Order Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

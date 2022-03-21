@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:style_name",
+ "creation": "2021-08-22 00:22:15.132863",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "style_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "style_name",
+   "fieldtype": "Data",
+   "label": "Style Option",
+   "unique": 1
+  }
+ ],
+ "links": [],
+ "modified": "2021-09-10 14:05:16.905477",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Style",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

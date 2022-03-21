@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "creation": "2021-11-13 14:57:04.741907",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "measurement_field",
+  "measurement_value",
+  "note",
+  "update_value_in_customer_template",
+  "column_break_4",
+  "image",
+  "image_view",
+  "image_html",
+  "measurement_template",
+  "field_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "measurement_field",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Measurement Field"
+  },
+  {
+   "default": "0",
+   "fieldname": "measurement_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Measurement Value",
+   "precision": "2"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Note"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:parent.doctype == 'Work Order'",
+   "fieldname": "update_value_in_customer_template",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Update Value in Customer Template"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "100 x 100 pixels",
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "Upload Image"
+  },
+  {
+   "fieldname": "image_view",
+   "fieldtype": "Image",
+   "hidden": 1,
+   "label": "Image",
+   "options": "image"
+  },
+  {
+   "fieldname": "image_html",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Image View",
+   "read_only": 1
+  },
+  {
+   "fieldname": "measurement_template",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Measurement Template",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "field_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "field_id",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-11-13 14:57:04.741907",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Alteration Measurement Fields",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

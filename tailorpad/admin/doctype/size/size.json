@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:size",
+ "creation": "2021-08-22 00:22:15.459337",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "size"
+ ],
+ "fields": [
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size",
+   "unique": 1
+  }
+ ],
+ "icon": "icon-group",
+ "links": [],
+ "modified": "2021-08-22 01:45:51.321384",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Size",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

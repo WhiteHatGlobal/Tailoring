@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:measurement_template_name",
+ "creation": "2021-08-22 00:22:34.805055",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "is_body_measurement_template",
+  "measurement_template",
+  "measurement_template_name",
+  "measurement_fields"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "is_body_measurement_template",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Body Measurement Template"
+  },
+  {
+   "fieldname": "measurement_template_name",
+   "fieldtype": "Data",
+   "label": "Measurement Template Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "measurement_fields",
+   "fieldtype": "Table",
+   "label": "Measurement Fields",
+   "options": "Measurement Fields"
+  },
+  {
+   "fieldname": "measurement_template",
+   "fieldtype": "Select",
+   "label": "Measurement Template Type",
+   "options": "\nBody Measurement\nGarment Measurement\nAlteration Measurement"
+  }
+ ],
+ "links": [],
+ "modified": "2021-09-06 10:32:04.859152",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Measurement Template",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

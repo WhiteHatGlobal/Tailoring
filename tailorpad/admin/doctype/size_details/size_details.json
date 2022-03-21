@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "creation": "2021-08-22 00:22:34.500167",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "size",
+  "width",
+  "fabric_qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "size",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Size",
+   "options": "Size"
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Width",
+   "options": "Width"
+  },
+  {
+   "fieldname": "fabric_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Fabric Qty",
+   "precision": "2"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-08-22 01:45:44.080600",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Size Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "creation": "2021-08-22 01:04:14.487892",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "operation",
+  "status",
+  "employee",
+  "production_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "operation",
+   "fieldtype": "Data",
+   "label": "Operation"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nAssign\nCompleted\nUnder QC\nUnder Trial"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee"
+  },
+  {
+   "fieldname": "production_order",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Production Order"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-08-22 01:04:14.487892",
+ "modified_by": "Administrator",
+ "module": "Tailorpad",
+ "name": "Serial No Track",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,529 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-08-22 00:46:57.059358",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "previous_workorder",
+  "order_type",
+  "serial_no_based_on",
+  "serial_no_series",
+  "sales_order",
+  "purchase_order",
+  "parent_item_code",
+  "item_code",
+  "item_name",
+  "item_group",
+  "item_qty",
+  "fabric_code",
+  "fabric_qty",
+  "fabric_name",
+  "size",
+  "fabric_type",
+  "booking_date",
+  "delivery_date",
+  "trial_no",
+  "trial_date",
+  "serial_no",
+  "column_break_10",
+  "customer",
+  "customer_name",
+  "branch",
+  "measured_by",
+  "note",
+  "priority",
+  "company",
+  "letter_head",
+  "body_measurement_details",
+  "body_measurement_fields",
+  "import_measurement_from_work_order",
+  "measurement_fields",
+  "style_information",
+  "import_style_from_work_order",
+  "column_break_23",
+  "change_style",
+  "section_break_25",
+  "style_fields",
+  "extra_style_cost",
+  "operations_and_raw_material",
+  "operations",
+  "items",
+  "sales_order_idx",
+  "delivery_warehouse",
+  "section_break_44",
+  "attach_image",
+  "image",
+  "refernce",
+  "trial_control_form_data",
+  "trial_control_form",
+  "modified_work_order",
+  "photo",
+  "front_side",
+  "attach_front_side",
+  "column_break_60",
+  "back_side",
+  "attach_back_side",
+  "column_break_63",
+  "side_side",
+  "side_view",
+  "section_break_47",
+  "amended_from",
+  "fabric_supplier",
+  "tailoring_supplier",
+  "fabric_warehouse"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_type",
+   "fieldtype": "Select",
+   "label": "Order Type",
+   "options": "\nRTB\nRTB/Alteration\nAlteration\nNew Order\nMerchandise",
+   "read_only": 1
+  },
+  {
+   "fieldname": "serial_no_based_on",
+   "fieldtype": "Select",
+   "label": "Serial No Based On",
+   "options": "Item Code\nNaming Series"
+  },
+  {
+   "depends_on": "eval:doc.serial_no_based_on == 'Naming Series'",
+   "fieldname": "serial_no_series",
+   "fieldtype": "Data",
+   "label": "Serial No Series"
+  },
+  {
+   "columns": 2,
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "purchase_order",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Purchase Order",
+   "options": "Purchase Order"
+  },
+  {
+   "fieldname": "parent_item_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Parent Item Code"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Data",
+   "label": "Item Group",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_qty",
+   "fieldtype": "Float",
+   "label": "Item Qty",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fabric_code",
+   "fieldtype": "Data",
+   "label": "Fabric Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fabric_qty",
+   "fieldtype": "Float",
+   "label": "Fabric Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fabric_name",
+   "fieldtype": "Data",
+   "label": "Fabric Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fabric_type",
+   "fieldtype": "Data",
+   "label": "Fabric Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "booking_date",
+   "fieldtype": "Date",
+   "label": "Booking Date",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "delivery_date",
+   "fieldtype": "Date",
+   "label": "Delivery Date"
+  },
+  {
+   "fieldname": "trial_no",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Fitting No"
+  },
+  {
+   "fieldname": "trial_date",
+   "fieldtype": "Date",
+   "label": "Fitting Date"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Small Text",
+   "label": "Serial No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "options": "customer.customer_name"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch",
+   "read_only": 1
+  },
+  {
+   "fieldname": "measured_by",
+   "fieldtype": "Link",
+   "label": "Measured By",
+   "options": "Employee"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "\nRegular\nExpress\nASAP"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "letter_head",
+   "fieldtype": "Link",
+   "label": "Letter Head",
+   "options": "Letter Head"
+  },
+  {
+   "fieldname": "body_measurement_details",
+   "fieldtype": "Section Break",
+   "label": "Body Measurement Details"
+  },
+  {
+   "fieldname": "body_measurement_fields",
+   "fieldtype": "Table",
+   "label": "Body Measurement Fields",
+   "options": "Measurement Fields"
+  },
+  {
+   "fieldname": "import_measurement_from_work_order",
+   "fieldtype": "Link",
+   "label": "Import Measurement from previous Work Order",
+   "options": "Work Order"
+  },
+  {
+   "fieldname": "measurement_fields",
+   "fieldtype": "Table",
+   "label": "Measurement Fields",
+   "options": "Measurement Fields"
+  },
+  {
+   "fieldname": "style_information",
+   "fieldtype": "Section Break",
+   "label": "Style Details"
+  },
+  {
+   "fieldname": "import_style_from_work_order",
+   "fieldtype": "Link",
+   "label": "Import Style from previous Work Order",
+   "options": "Work Order"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "change_style",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Change Style"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "style_fields",
+   "fieldtype": "Table",
+   "label": "Style fields",
+   "options": "WO Style Field"
+  },
+  {
+   "fieldname": "extra_style_cost",
+   "fieldtype": "Currency",
+   "label": "Extra Style Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "operations_and_raw_material",
+   "fieldtype": "Section Break",
+   "label": "Operations and Raw Material"
+  },
+  {
+   "fieldname": "operations",
+   "fieldtype": "Table",
+   "label": "BOM Operation",
+   "options": "BOM Operation"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "BOM Item",
+   "options": "BOM Item"
+  },
+  {
+   "fieldname": "sales_order_idx",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Sales Order IDX",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "delivery_warehouse",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Delivery Warehouse",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_44",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attach_image",
+   "fieldtype": "Attach",
+   "label": "Attach Image",
+   "read_only": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "attach_image"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "refernce",
+   "fieldtype": "Section Break",
+   "label": "Refernce"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "trial_control_form_data",
+   "fieldtype": "Link",
+   "label": "Trial Control Form Data",
+   "no_copy": 1,
+   "options": "Fit Session",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "trial_control_form",
+   "fieldtype": "Data",
+   "label": "Trial Control",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "modified_work_order",
+   "fieldtype": "Data",
+   "label": "Modified Work Order",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Section Break",
+   "label": "Customer Photo"
+  },
+  {
+   "fieldname": "front_side",
+   "fieldtype": "Image",
+   "label": "Front Side",
+   "options": "attach_front_side"
+  },
+  {
+   "fieldname": "attach_front_side",
+   "fieldtype": "Attach",
+   "label": "Front View"
+  },
+  {
+   "fieldname": "column_break_60",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "back_side",
+   "fieldtype": "Image",
+   "label": "Back Side",
+   "options": "attach_back_side"
+  },
+  {
+   "fieldname": "attach_back_side",
+   "fieldtype": "Attach",
+   "label": "Back View"
+  },
+  {
+   "fieldname": "column_break_63",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "side_side",
+   "fieldtype": "Image",
+   "label": "Side Side",
+   "options": "side_view"
+  },
+  {
+   "fieldname": "side_view",
+   "fieldtype": "Attach",
+   "label": "Side View"
+  },
+  {
+   "fieldname": "section_break_47",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Work Order",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "fabric_supplier",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Fabric Supplier",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "tailoring_supplier",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Tailoring Supplier",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "fabric_warehouse",
+   "fieldtype": "Link",
+   "label": "Fabric Warehouse",
+   "options": "Warehouse",
+   "read_only": 1
+  },
+  {
+   "default": "WO-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "WO-",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "previous_workorder",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Previous workorder"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-12-09 22:54:44.272340",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Work Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

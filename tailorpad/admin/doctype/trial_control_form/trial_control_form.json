@@ -1,0 +1,163 @@
+{
+ "actions": [],
+ "creation": "2021-08-22 00:48:31.657673",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "current_trial_no",
+  "current_trial_date",
+  "column_break_1",
+  "item_code",
+  "item_name",
+  "trial_serial_no",
+  "section_break_4",
+  "close_all_trials",
+  "trials",
+  "reference_detail",
+  "sales_order",
+  "work_order",
+  "column_break_6",
+  "production_order",
+  "warehouse",
+  "status",
+  "current_trial_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "current_trial_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trial No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_trial_date",
+   "fieldtype": "Datetime",
+   "label": "Trial Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "trial_serial_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Trial Serial No",
+   "options": "Serial No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Close all trials and transfer material to next operation",
+   "fieldname": "close_all_trials",
+   "fieldtype": "Button",
+   "label": "Close All Trials"
+  },
+  {
+   "fieldname": "trials",
+   "fieldtype": "Table",
+   "label": "Trials",
+   "options": "Trial Detail"
+  },
+  {
+   "fieldname": "reference_detail",
+   "fieldtype": "Section Break",
+   "label": "Reference Detail"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Link",
+   "label": "Original Work Order",
+   "options": "Work Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "production_order",
+   "fieldtype": "Link",
+   "label": "Production Order",
+   "options": "Production Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "read_only": 1
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Open\nClosed",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_trial_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Current Trial Name",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-08-22 00:50:08.671736",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Trial Control Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

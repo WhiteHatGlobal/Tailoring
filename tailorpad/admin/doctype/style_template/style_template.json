@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:style_template_name",
+ "creation": "2021-08-22 00:22:34.691610",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "style_template_name",
+  "style_fields"
+ ],
+ "fields": [
+  {
+   "fieldname": "style_template_name",
+   "fieldtype": "Data",
+   "label": "Style Template Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "style_fields",
+   "fieldtype": "Table",
+   "label": "Style Fields",
+   "options": "Style fields"
+  }
+ ],
+ "links": [],
+ "modified": "2021-08-27 16:58:18.124953",
+ "modified_by": "Administrator",
+ "module": "Admin",
+ "name": "Style Template",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
